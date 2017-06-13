@@ -83,5 +83,7 @@
 
     <!-- Scripts -->
     <script src="/js/app.js"></script>
+    @include('layouts.menu')
+    @include('layouts.profile')
 </body>
 </html>
