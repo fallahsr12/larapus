@@ -170,6 +170,7 @@ return [
         //add on
         Collective\Html\HtmlServiceProvider::class,
         Laratrust\LaratrustServiceProvider::class,
+        Yajra\Datatables\DatatablesServiceProvider::class,
         
 
         /*
@@ -180,8 +181,7 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        Yajra\DatatablesServiceProvider::class,
-
+        
     ],
 
     /*
