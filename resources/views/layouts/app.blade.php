@@ -54,6 +54,7 @@
                         @endif
                         @role('admin')
                         <li><a href="{{ route('authors.index') }}">Penulis</a></li>
+                        <li><a href="{{ route('books.index') }}">Buku</a></li>
                         @endrole
                       </ul>
                     &nbsp;
@@ -79,7 +80,7 @@
                                             Logout
                                         </a>
 
-                                        <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                                        <form id="logout-form" action="{{ url('/logout') }}" me thod="POST" style="display: none;">
                                             {{ csrf_field() }}
                                         </form>
                                     </li>
@@ -99,6 +100,7 @@
     
     <script src="{{asset('/js/jquery.dataTables.min.js')}}"></script>
     <script src="{{asset('/js/dataTables.bootstrap.min.js')}}"></script>
+    <script type="{{asset('/js/custom.js')}}"></script>
     @yield('scripts')
     @include('layouts.flash')
     @include('layouts.menu')
