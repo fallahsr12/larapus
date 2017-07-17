@@ -5,6 +5,9 @@ namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Laratrust\Traits\LaratrustUserTrait;
+use App\Book;
+use App\BorrowLog;
+use App\Exception\BookException;
 
 class User extends Authenticatable
 {
@@ -28,4 +31,11 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+    public function borrow(Book $book)
+    {
+        //cek apakah buku ini sedang dipinjam oleh user
+        if (condition) {
+            # code...
+        }
+    }
 }
